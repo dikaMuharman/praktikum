@@ -7,29 +7,42 @@
     <link rel="stylesheet" href="style/base-style.css" />
     <title>Box model</title>
     <style>
+      body {
+        margin-bottom: 300px;
+      }
       .container {
         background-color: wheat;
         width: 700px;
         height: 500px;
+        position: relative;
       }
 
       .box {
         background-color: white;
         width: 600px;
+        border: 1px solid black;
       }
 
       .box1 {
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        z-index: 10;
       }
 
       .box2 {
+        position: relative;
+        top: 50px;
+        left: 30px;
+        z-index: 15;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <h1>Position</h1>
-      <div class="box">
-        <h1>Ini contoh konten dari box</h1>
+      <div class="box box1">
+        <h1>Ini contoh konten dari box 1</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
           similique assumenda deleniti quis laudantium omnis optio ipsam
@@ -38,7 +51,7 @@
         </p>
       </div>
       <div class="box box2">
-        <h1>Ini contoh konten dari box</h1>
+        <h1>Ini contoh konten dari box 2</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur
           similique assumenda deleniti quis laudantium omnis optio ipsam

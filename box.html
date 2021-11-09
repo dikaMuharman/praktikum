@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style/base-style.css" />
     <title>Box model</title>
     <style>
+      body {
+        margin-bottom: 500px;
+      }
       .container {
         background-color: wheat;
         width: 700px;
@@ -15,7 +18,27 @@
 
       .box {
         background-color: white;
-        width: 600px;
+        width: 500px;
+        border-style: solid dotted dashed double;
+        /* border-left-style: dashed;
+        border-top-style: double; */
+        /* border-width: 5px; */
+        /* border-top-width: 5px;
+        border-left-width: 10px; */
+        /* border-top-color: aqua;
+        border-bottom-color: red; */
+        border: 3px solid black;
+        padding: 20px 30px 60px 10px;
+        margin: 30px 20px 60px;
+        border-radius: 20px;
+      }
+      button {
+        background-color: rgb(79, 241, 4);
+        border: none;
+        padding: 8px 20px;
+        margin: 30px;
+        border-radius: 4px;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -31,6 +54,9 @@
           laborum illum? Vero!
         </p>
       </div>
+    </div>
+    <div>
+      <button>button</button>
     </div>
   </body>
 </html>
